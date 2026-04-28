@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>3.html - Bandeiras</title>
+
+    <style>
+        .band_f, .band_a, .band_j {
+            width: 300px;
+            height: 180px;
+            margin-bottom: 30px;
+            border: 1px solid black;
+        }
+
+        .band_f {
+            display: flex;
+        }
+
+        .box1, .box2, .box3 {
+            flex: 1;
+        }
+
+        .band_f>.box1 {
+            background-color: blue;
+        }
+
+       .band_f> .box2 {
+            background-color: white;
+        }
+
+        .band_f>.box3 {
+            background-color: red;
+        }
+
+        .band_a {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .band_a >.box1 {
+            background-color: black;
+        }
+
+        .band_a >.box2 {
+            background-color: red;
+        }
+
+        .band_a >.box3 {
+            background-color: yellow;
+        }
+
+        .band_j {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circulo {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>França</h2>
+    <div class="band_f">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+    <h2>Alemanha</h2>
+    <div class="band_a">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+    <h2>Japão</h2>
+    <div class="band_j">
+        <div class="circulo"></div>
+    </div>
+
+</body>
+</html>
